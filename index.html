@@ -44,19 +44,26 @@
 			
 		<a style="display:none;" href="{{ url_for('index') }}" class="nav-item nav-link active" >Home</a>
 
-      <li class="dropdown">
-        <a  style="color: rgba(0,0,0,.5);" class="dropdown-toggle nav-item nav-link active" data-toggle="dropdown" href="#">Apps
+     <li class="dropdown">
+        <a  style="color: rgba(0,0,0,.5);" class="dropdown-toggle nav-item nav-link active" data-toggle="dropdown" href="#">My Apps
         <span class="caret"></span></a>
         <ul class="dropdown-menu" style="width:100%; border-style:none;">
-		  <li><a href="{{ url_for('index')}}">PDF to WORD</a></li>
+		  <li><a href="{{ url_for('index')}}"></a></li>
           <li><a href="https://mmusi.github.io/barcode-generator/" target="_blank" >Barcode Generator</a></li>
           <li><a href="https://downloadtuber.herokuapp.com/" target="_blank" >Video Downloader</a></li>
 		</ul>
       </li>
 		
 		
-		<a href="{{ url_for('data') }}" class="nav-item nav-link"  >Analytics</a>
-				<a style="display:none" href="{{ url_for('mywork') }}"class="nav-item nav-link"  >My Work</a>
+		<a href="{{ url_for('data') }}" class="nav-item nav-link"  >Analytics<span class="caret"></span></a>
+		<ul class="dropdown-menu" style="width:100%; border-style:none;">
+		  <li><a href="{{ url_for('index')}}">BPL Stats</a></li>
+          <li><a href="https://mmusi.github.io/barcode-generator/" target="_blank" >Barcode Generator</a></li>
+          <li><a href="https://downloadtuber.herokuapp.com/" target="_blank" >Video Downloader</a></li>
+		</ul>
+		
+		
+	    <a style="display:none" href="{{ url_for('mywork') }}"class="nav-item nav-link" >My Work</a>		
 		<a href="{{ url_for('about') }}"class="nav-item nav-link"  >About Me</a>
 
 		<a href="https://mmusi-thato.medium.com/" target="_blank" class="nav-item nav-link" target="popup" 
