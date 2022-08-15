@@ -193,7 +193,7 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Send Email';
-      alert('Sent!');
+      alert('Congratulations, message has been sent. We will get back to you shortly!');
     }, (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));
