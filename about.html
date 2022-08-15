@@ -23,38 +23,6 @@
     }
 </style>	
 	
-	
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('dmQfn3U7vFkgeL_Bq');
-        })();
-    </script>
-
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-		  const serviceID = "service_46l7pev";
-          const templateID = "template_tojxkd6";
-                emailjs.sendForm('serviceID', 'templateID', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
-
-
-
-
-
 </head>
 <body>
 <div class="bs-example">
@@ -171,65 +139,70 @@ I hope to share my knowledge regarding all the tools and technonology used to bu
 Thank you for visiting! I also do consultation work:  I would love to help with any issues as listed:
 </p>
 
-   <p style="margin-left:25px; margin-right:5px;"> Contact Me: <span style="font-size:32px;">$20</span>/per hour.</P>
+   <p style="margin-left:25px; margin-right:5px;"> Contact Me:</P>
 
 <center>
 
-    <div style="margin-bottom:20px;" class="container">
-      <div class="row">
-        <div class="col align-self-center">
-          <!-- contact form -->
-          <form id="contact-form" >
-            <!-- name -->
-            <div class="form-group">
-              <input
-                type="name"
-                name="name"
-                class="form-control"
-                id="name"
-                placeholder="Please enter your name"
-              />
-            </div>
+<form id="form">
 
-            <!-- email -->
-            <div class="form-group">
-              <label style="visibility:hidden;" for="email">Email address</label>
-              <input
-                type="email"
-                name="email"
-                class="form-control"
-                id="email"
-                placeholder="Please enter your email"
-              />
-            </div>
+  <div class="field">
+    <label style="visibility:hidden;" for="name">name</label>
+    <input placeholder="Please enter your name"  type="text" name="name" id="name">
+  </div>
+  
+  <div style="display:none;" class="field">
+    <label style="visibility:hidden;" for="email">email</label>
+    <input placeholder="Please enter your email" type="text" name="email" id="email">
+  </div>
+  
+  <div class="field">
+    <label style="visibility:hidden;" for="subject">subject</label>
+    <input placeholder="Subject" type="text" name="subject" id="subject">
+  </div>
+  
+    <div class="field">
+    <label style="visibility:hidden;"  for="message">message</label>
+    <textarea placeholder="Message: How can I help you"  type="text" name="message" id="message" rows="5"></textarea>
+  </div>
+  
+  <div class="field">
+    <label style="visibility:hidden;" for="reply_to">reply_to</label>
+    <input placeholder="Email to be replied to...?" type="text" name="reply_to" id="reply_to">
+  </div>
 
-            <!-- subject -->
-            <div class="form-group">
-              <label style="visibility:hidden;" for="subject">Subject</label>
-              <input
-                type="text"
-                name="subject"
-                class="form-control"
-                id="subject"
-                placeholder="Subject"
-              />
-            </div>
+  <input type="submit" id="button" value="Send Email" >
+</form>
 
-            <div class="form-group">
-              <label style="visibility:hidden;" for="email_body">Message</label>
-              <textarea
-			    placeholder="What would you like to be helped with(Describe here)?"
-                class="form-control"
-                id="email_body"
-                rows="5"
-              ></textarea>
-            </div>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-            <button type="submit" class="btn btn-primary">Send Request</button>
-          </form>
-        </div>
-      </div>
-    </div>
+<script type="text/javascript">
+  emailjs.init('dmQfn3U7vFkgeL_Bq')
+  
+ const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_tojxkd6';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+}); 
+  
+  
+</script>
+
 
 
 
