@@ -27,7 +27,7 @@
 <div class="bs-example">
     <nav  class="navbar navbar-expand-md navbar-light">
         <a href="{{ url_for('index') }}" class="navbar-brand">
-            <img src="static/img/tech.svg" height="" width="" alt="Thato Mmusi">
+            <img src="static/img/tech.svg" height="" width="" style="width:320px;" alt="Thato Mmusi">
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -68,7 +68,7 @@
 		
 		
 	    <a style="display:none" href="{{ url_for('mywork') }}"class="nav-item nav-link" >My Work</a>		
-		<a href="{{ url_for('about') }}"class="nav-item nav-link"  >About Me</a>
+		<a href="about.html"class="nav-item nav-link"  >About Me</a>
 
 		<a href="https://mmusi-thato.medium.com/" target="_blank" class="nav-item nav-link" target="popup" 
         onclick="window.open('https://mmusi-thato.medium.com/','popup','width=600,height=600,scrollbars=no,resizable=no'); return false;">Blog</a>
@@ -104,7 +104,7 @@
   
   <div class="column">
     
-<div class="container" style="with:80%; align-items: center; margin-top:45px; margin-right:25px; padding:25px; ">Hello! I am
+<div class="container" style="with:80%; align-items: center; margin-top:45px; margin-right:25px; padding:25px; padding-bottom:100px; ">Hello! I am
         <h1 class="title is-1">
           Thato Mmusi
         </h1>
@@ -115,22 +115,36 @@
         </p>
 		<hr>
 		<blockquote>
-		<p style="font-style:italic;color:rgba(0,0,0,.5);">
+		<p style="font-style:italic;color:rgba(0,0,0,.5); padding-bottom:20px;">
 		I am also adept at solving your problems, anything to do with Python,<br>Data Analytics and Business Information Solutions I am ready to help . You can learn more on some  issues at<a href="https://mmusi-thato.medium.com/" target="_blank" > my blog</a>, <a href="https://mmusi.github.io/quickjavascript.github.io" target="_blank" >my books</a>, <a>videos</a>, open source projects, web development.
 		I am available for consultation at a fee of <span style="font-size:24px;">$20</span> for an hour.		
 		<p>
 		</blockquote>
-		 Interested?
+		
+
+		 
 		 
 <center>
 
-<!-- Calendly badge widget begin -->
+
+<div style="width:100%; height:100px;">
+
+<!-- Calendly link widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/mmusi2010', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
-<!-- Calendly badge widget end -->
+<a href="" style="background:#007bff; padding:10px; color:#fff; margin-left:-25px;" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mmusi2010'});return false;">Schedule time with me</a>
+<!-- Calendly link widget end -->
+
+</div>
+
+
+
 
 </center>
+
+		<p>All rights Reserved <a href="https://bw.linkedin.com/in/thato-mmusi-13940b5b"
+                        target="_blank">Tech Handyman &copy; 2022</a>.</p>
+
 </div>	
 
 
@@ -138,6 +152,7 @@
 
 	
 </div>
+
   
   
 <div style="margin:5px 25px;">
