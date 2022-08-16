@@ -25,9 +25,36 @@
 </head>
 <body>
 <div class="bs-example">
+
+<div class="">
+
+    <ul class="ct-socials">
+
+   <li>
+      <a href="https://github.com/Mmusi/" target="_blank"><i class="fa fa-github"></i></a>
+   </li>
+   <li>
+      <a href="https://www.linkedin.com/in/thato-mmusi-13940b5b" target="_blank"><i class="fa fa-linkedin"></i></a>
+   </li>
+      <li>
+      <a href="https://www.youtube.com/channel/UCRh9XybqmWu_bc6vVtJltVg/featured" target="_blank"><i class="fa fa-youtube"></i></a>
+   </li>
+     <li>
+      <a href="https://twitter.com/mmusi_thato?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+   </li>
+   <li>
+      <a href="https://www.facebook.com/people/Thato-Mmusi/100082841118865/" target="_blank"><i class="fa fa-facebook"></i></a>
+   </li>
+
+   </ul>
+
+
+
+</div>
+
     <nav  class="navbar navbar-expand-md navbar-light">
-        <a href="{{ url_for('index') }}" class="navbar-brand">
-            <img src="static/img/tech.svg" height="" width="" style="width:320px;" alt="Thato Mmusi">
+        <a href="" class="navbar-brand">
+            <img src="static/img/tech.svg" height="" width="" style="width:320px; margin-top:-25px;" alt="Thato Mmusi">
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -42,35 +69,41 @@
             </div>
             <div class="navbar-nav ml-auto">
 			
-		<a style="display:none;" href="{{ url_for('index') }}" class="nav-item nav-link active" >Home</a>
+		<a style="display:none;" href="" class="nav-item nav-link active" >Home</a>
 
      <li class="dropdown">
-        <a  style="color: rgba(0,0,0,.5);" class="dropdown-toggle nav-item nav-link active" data-toggle="dropdown" href="#">My Apps
+        <a  style="color: rgba(0,0,0,.5); font-size:17px; font-weight:bold;" class="dropdown-toggle nav-item nav-link active" data-toggle="dropdown" href="#">My Apps
         <span class="caret"></span></a>
         <ul class="dropdown-menu" style="width:100%; border-style:none;">
-		  <li><a href="{{ url_for('index')}}"></a></li>
-          <li><a href="https://mmusi.github.io/barcode-generator/" target="_blank" >Barcode Generator</a></li>
-          <li><a href="https://downloadtuber.herokuapp.com/" target="_blank" >Video Downloader</a></li>
+		  <li><a href=""></a></li>
+          <li style="margin-left:8px; margin:5px; padding:5px; width:100%"><a style="width:100%; color: #fff; background:#3f4653; font-size:16px; padding:5px; margin:2px;" href="https://mmusi.github.io/barcode-generator/" target="popup" onclick="window.open('https://mmusi.github.io/barcode-generator/','popup','width=600,height=600,scrollbars=no,resizable=no'); return false;"
+          >Barcode Generator</a></li>
+          <li style="margin-left:8px; margin:5px; padding:5px; width:100%"><a style="width:100%; color: #fff; background:#3f4653; font-size:16px; padding:5px; margin:2px;" href="https://downloadtuber.herokuapp.com/" target="popup" onclick="window.open('https://downloadtuber.herokuapp.com/','popup','width=600,height=600,scrollbars=no,resizable=no'); return false;"
+           >Video Downloader</a></li>
 		</ul>
       </li>
 		
 		
 		<li class="dropdown">
-        <a  style="color: rgba(0,0,0,.5);" class="dropdown-toggle nav-item nav-link active" data-toggle="dropdown" href="#">Analytics
+        <a  style="color: rgba(0,0,0,.5); font-size:17px; font-weight:bold;" class="dropdown-toggle nav-item nav-link active" data-toggle="dropdown" href="#">Analytics
         <span class="caret"></span></a>
 		<ul class="dropdown-menu" style="width:100%; border-style:none;">
-		  <li><a href="https://mmusi.github.io/bpl-stats/">BPL Stats</a></li>
-          <li><a href="https://mmusi.github.io/barcode-generator/" target="_blank" >Predict Sales</a></li>
-          <li><a href="https://downloadtuber.herokuapp.com/" target="_blank" >Sales Dashboard</a></li>
-		  <li><a href="exceldashboard.html" target="_blank" >Sales Excel Dashboard</a></li>
+		  <li style="margin-left:8px; margin:5px; padding:5px;"><a style="color: #fff; background:#3f4653; font-size:16px; padding:5px; margin:2px;" href="https://mmusi.github.io/bpl-stats/"
+		  target="_blank" target="popup" onclick="window.open('https://mmusi.github.io/bpl-stats/','popup','width=600,height=600,scrollbars=no,resizable=no'); return false;"
+		  >BPL Stats</a></li>
+          <li style="margin-left:8px; margin:5px; padding:5px;" ><a style="color: #fff; background:#3f4653; font-size:16px; padding:5px; margin:2px;" href="https://mmusi.github.io/barcode-generator/" target="_blank" >Predict Sales</a></li>
+          <li style="margin-left:8px; margin:5px; padding:5px; "><a style="color: #fff; background:#3f4653; font-size:16px; padding:5px; margin:2px;" href="https://downloadtuber.herokuapp.com/" target="_blank" >Sales Dashboard</a></li>
+		  <li style="margin-left:8px; margin:5px; padding:5px; width:100%"><a style="width:100%; color: #fff; background:#3f4653; font-size:16px; padding:5px; margin:2px;" href="exceldashboard.html" target="_blank" target="popup" 
+           onclick="window.open('exceldashboard.html','popup','width=600,height=600,scrollbars=no,resizable=no'); return false;"
+           >Excel Dashboard</a></li>
 		</ul>
 		</li>
 		
 		
-	    <a style="display:none" href="{{ url_for('mywork') }}"class="nav-item nav-link" >My Work</a>		
-		<a href="about.html"class="nav-item nav-link"  >About Me</a>
+	    <a style="display:none; font-size:18px;" href="" class="nav-item nav-link" >My Work</a>		
+		<a href="about.html"class="nav-item nav-link" style="font-size:17px; font-weight:bold;"  >About Me</a>
 
-		<a href="https://mmusi-thato.medium.com/" target="_blank" class="nav-item nav-link" target="popup" 
+		<a href="https://mmusi-thato.medium.com/" style="font-size:17px; font-weight:bold;" target="_blank" class="nav-item nav-link" target="popup" 
         onclick="window.open('https://mmusi-thato.medium.com/','popup','width=600,height=600,scrollbars=no,resizable=no'); return false;">Blog</a>
 		<a style="display:none;" href="/hire" class="nav-item nav-link" >Hire Me</a>
         	
@@ -135,15 +168,23 @@
 <a href="" style="background:#007bff; padding:10px; color:#fff; margin-left:-25px;" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mmusi2010'});return false;">Schedule time with me</a>
 <!-- Calendly link widget end -->
 
+
+<p style="padding:25px;margin-left:-20px;">All rights Reserved <a href="https://bw.linkedin.com/in/thato-mmusi-13940b5b"
+                        target="_blank">Tech Handyman &copy; 2022</a>.</p>
+
 </div>
+
+
+
 
 
 
 
 </center>
 
-		<p>All rights Reserved <a href="https://bw.linkedin.com/in/thato-mmusi-13940b5b"
-                        target="_blank">Tech Handyman &copy; 2022</a>.</p>
+
+						
+
 
 </div>	
 
