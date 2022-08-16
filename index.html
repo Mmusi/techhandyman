@@ -157,6 +157,53 @@
   
 <div style="margin:5px 25px;">
   
-    <div id="cdawrap" style="display: block;"><center><img src="static/img/ads.png" alt="advertise" width="" height="" border="0"></center><a class="cda-text" href="#" class="cda-text" target="_blank" rel="noopener">Let me create effective campaigns for your company that will grow sales using insights on what people are more likely to buy next.</a><div class="cda-footer"><center><a class="cda-poweredby" href="" target="_blank" rel="noopener" style="font-size:14px; color:#007bff; margin-left:30px;">Ask me how!</a></center></div></div>	
+    <div id="cdawrap" style="display: block;"><center><img src="static/img/ads.png" alt="advertise" width="" height="" border="0"></center>
+	<a class="cda-text" href="#" class="cda-text" target="_blank" rel="noopener">Let me create effective campaigns for your company that will grow sales using insights on what people are more likely to buy next.</a>
+	<div class="cda-footer popup">
+	<center>
+	
+	<div class="cda-poweredby popup" style="font-size:14px; color:#007bff; margin-left:30px; cursor: pointer;" onclick="myFunction()">Ask me how!
+    <span class="popuptext" id="myPopup" style="display:none;">
+
+	
+	
+	
+	
+	</span>
+    </div>
+	</center></div>
+	
+	</div>	
+	
+
 	
 </div>
+
+
+
+
+<script>
+// When the user clicks on div, open the popup!
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
+
+<!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+267 72419956", // WhatsApp number
+            call_to_action: "Talk to me..", // Call to action
+            button_color: "#FF6550", // Color of button
+            position: "left", // Position may be 'right' or 'left'
+        };
+        var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
