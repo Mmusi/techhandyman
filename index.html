@@ -34,7 +34,9 @@
     }
 </style>
 </head>
-<body>
+<body style="overflow-x: hidden; overflow-y: hidden;">
+
+<div style="overflow-x: hidden; overflow-y: auto;" > 
 <div class="bs-example">
 
 <div class="">
@@ -83,7 +85,7 @@
 		<a style="display:none;" href="" class="nav-item nav-link active" >Home</a>
 
      <li class="dropdown">
-        <a  style="color: rgba(0,0,0,.5); font-size:17px; font-weight:bold;" class="dropdown-toggle nav-item nav-link active" data-toggle="dropdown" href="#">Apps
+        <a  style="color: rgba(0,0,0,.5); font-size:17px; font-weight:bold;" class="dropdown-toggle nav-item nav-link active" data-toggle="dropdown" href="#">my Apps
         <span class="caret"></span></a>
         <ul class="dropdown-menu" style="width:100%; border-style:none;">
 		  <li><a href=""></a></li>
@@ -96,19 +98,10 @@
 		
 		
 		<li class="dropdown">
-        <a  style="color: rgba(0,0,0,.5); font-size:17px; font-weight:bold;" class="dropdown-toggle nav-item nav-link active" data-toggle="dropdown" href="#">Analytics
-        <span class="caret"></span></a>
-		<ul class="dropdown-menu" style="width:100%; border-style:none;">
-		  <li style="margin-left:8px; margin:5px; padding:5px;"><a style="color: #fff; background:#3f4653; font-size:16px; padding:5px; margin:2px;" href="https://mmusi.github.io/bpl-stats/"
-		  target="_blank" target="popup" onclick="window.open('https://mmusi.github.io/bpl-stats/','popup','width=600,height=600,scrollbars=no,resizable=no'); return false;"
-		  >BPL Stats</a></li>
-          <li style="margin-left:8px; margin:5px; padding:5px;" ><a style="color: #fff; background:#3f4653; font-size:16px; padding:5px; margin:2px;" href="https://mmusi.github.io/barcode-generator/" target="_blank" >Predict Sales</a></li>
-          <li style="margin-left:8px; margin:5px; padding:5px; "><a style="color: #fff; background:#3f4653; font-size:16px; padding:5px; margin:2px;" href="https://downloadtuber.herokuapp.com/" target="_blank" >Sales Dashboard</a></li>
-		  <li style="margin-left:8px; margin:5px; padding:5px; width:100%"><a style="width:100%; color: #fff; background:#3f4653; font-size:16px; padding:5px; margin:2px;" href="exceldashboard.html" target="_blank" target="popup" 
-           onclick="window.open('exceldashboard.html','popup','width=600,height=600,scrollbars=no,resizable=no'); return false;"
-           >Excel Dashboard</a></li>
-		</ul>
-		</li>
+        <a href="myprojects.html" class="nav-item nav-link active" style="cursor: pointer; color: rgba(0,0,0,.5); font-size:17px; font-weight:bold;"  >my Work
+       </a>
+	   
+	   </li>
 		
 		
          <a style="color: #007bff; font-size:17px; font-weight:400; padding:2px;" href="https://payhip.com/TechHandyman" target="_blank" target="popup" 
@@ -175,7 +168,7 @@
 <center>
 
 
-<div style="width:100%; height:100px;">
+<div style="width:100%; height:100px; margin-bottom:25px;">
 
 <!-- Calendly link widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
@@ -184,7 +177,7 @@
 <!-- Calendly link widget end -->
 
 
-<p style="padding:25px;margin-left:-20px;">All rights Reserved <a href="https://bw.linkedin.com/in/thato-mmusi-13940b5b"
+<p style="padding:25px;margin-left:-20px;margin-bottom:25px;">All rights Reserved <a href="https://bw.linkedin.com/in/thato-mmusi-13940b5b"
                         target="_blank">Tech Handyman &copy; 2022</a>.</p>
 
 </div>
@@ -207,6 +200,8 @@
 </div>	 
 
 	
+</div>
+
 </div>
 
   
@@ -233,16 +228,31 @@
 	
 
 	
+</div>  
+
+
+
+<div id="overlay">
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
-
-
-
-
 <script>
-// When the user clicks on div, open the popup!
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
 }
 </script>
 
@@ -263,3 +273,4 @@ function myFunction() {
     })();
 </script>
 <!-- /GetButton.io widget -->
+
